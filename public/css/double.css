@@ -1,0 +1,608 @@
+.double {
+    margin-top: 50px;
+}
+
+.double .game .progress {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgba(9, 49, 55, 0.5);
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: left;
+    font-size: 11px;
+    font-weight: 900;
+    z-index: 999;
+    color: var(--white);
+    padding: 5px 5px;
+}
+
+.double.game .progress #text {
+    z-index: 999;
+}
+
+@keyframes slide-background {
+    0%    { right: 0; }
+    100%  { right: -200%; }
+  }
+
+.animation {
+    position: absolute;
+    transform: translateX(calc(-55400px)) translateZ(0px);
+    transition: height 250ms ease 0s, transform 0ms cubic-bezier(0.15, 0.8, 0.2, 0.95) -5000ms;
+}
+
+.animation .item .number {
+    display: flex;
+    align-items: center;
+    font-weight: 520;
+    font-size: 18px;
+    color: var(--white);
+    height: 100%;
+    justify-content: center;
+
+}
+
+.game .progress {
+    background-color: rgba(9, 49, 55, 0.5);
+    margin-bottom: 20px;
+}
+
+.game .progress p {
+    z-index: 99;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0;
+}
+
+.game .progress .scroll {
+    box-sizing: content-box;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    border-radius: 6px;
+    height: 100%;
+    background-color: #4a1179;
+}
+
+.double .bets {
+    padding: 15px 20px;
+    width: 320px;
+    height: calc(100% - 20px);
+    background-color: rgba(8, 12, 17, 0.5);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.double .bets b {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.double .bet .user {
+    background-color: rgba(8, 12, 17, 0.5);
+    margin-bottom: 2px;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.double .bets .bet-high {
+    background-color: rgba(8, 12, 17, 0.5);
+    margin-bottom: 2px;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+}
+
+.double .game {
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 10px;
+    height: 100%;
+    flex-direction: column !important;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.double .roulette {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.double .previous-roll {
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden !important;
+    flex-direction: row;
+}
+
+.double .previous-roll .text {
+    font-weight: 990;
+    color: rgb(141, 142, 160);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.double .previous-roll .history-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.double .history-items .black {
+    background-color: #262f3c !important;
+}
+
+.double .history-items .red {
+    background-color: #5e0ea1 !important;
+}
+
+.double .history-items .white {
+    background-color: #fff !important;
+    color: #000;
+}
+
+
+.double .wager {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(8, 12, 17, 0.5);
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.double .bets-history {
+    margin-top: 10px;
+    display: flex;
+}
+
+.double .bets-history .red-history {
+    background-color: rgba(8, 12, 17, 0.5);
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.double .bets-history .white-history {
+    background-color: rgba(8, 12, 17, 0.5);
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.double .bets-history .black-history {
+    background-color: rgba(8, 12, 17, 0.5);
+    flex: 1;
+    border-radius: 10px;
+}
+
+
+.double .bets-history .history-user {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #213143;
+}
+
+.double .bets-history .history-user .avatar {
+    width: 25px;
+    height: 25px;
+}
+
+.double .bets-history .history-user .avatar img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.double .bets-history .rank-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.double .bets-history .rank-name .avatar {
+    margin-right: 5px;
+}
+
+.double .confirm-bet {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(45deg, #4b9100 0%, #90c000 51%, #4b9100 100%);
+    border-radius: 5px;
+    display: flex;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.double .confirm-bet:hover {
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.bets-history .history-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 2px solid #213143;
+
+}
+
+.bets-history .history-header .history-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.history-status .apostas{
+    font-size: 12px;
+    color: #646464;
+}
+
+.bets-history .history-header .history-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wager input:nth-of-type(1) {
+    border: 1px solid rgba(47,52,69,0.8);
+    background-color: rgba(8, 12, 17, 0.5);
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    font-size: 14px;
+    color: #e3e6ec;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wager .color-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 2;
+}
+
+.wager .color-selector .label {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 2px 20px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.wager .color-selector .label:hover {
+    transform: scale(1.02);
+}
+
+.wager .color-selector .white {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0 10px;
+}
+
+.wager .color-selector .red {
+    background-color: #4a1179;
+    color: var(--white);
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.wager .color-selector .black {
+    background-color: var(--black);
+    color: var(--white);
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.double .user {
+    display: flex;height: 100%;justify-content: space-between;align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(227,230,236,0.8);
+    padding: 0 10px;
+}
+
+.double .user .info .name {
+    min-width: 70px;
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.double .user .info {
+    min-width: 100px;
+    display: flex;justify-content: space-between;align-items: center;
+}
+
+.double .user .values {
+    min-width: 100px;
+    display: flex;justify-content: space-between;align-items: center;
+}
+
+.double .user svg {
+    width: 18px;
+    margin-right: 5px;
+    fill: #e9b10b;
+}
+
+.wager input:nth-of-type(2) {
+    border: 1px solid rgba(47,52,69,0.8);
+    background-color: rgba(8, 12, 17, 0.5);
+    height: 50px;
+    padding: 16px 16px 13px 30px;
+    font-size: 14px;
+    color: #e3e6ec;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.wager input:focus {
+    box-shadow: 0 0 0 1px #ffb019;
+}
+
+.wager .alert {
+    grid-area: repeat / repeat / repeat / repeat;
+    font-style: italic;
+    font-size: 12px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    color: rgba(141,142,160,0.8);
+}
+
+.double .deposit {
+    color: #141419;
+    background-color: #e9b10b;
+    box-shadow: inset 0 -3px 0 0 #cc6c31;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    height: 50px !important;
+}
+
+.wager .text {
+    color: rgb(141, 142, 160);
+    font-size: 12px;
+    font-weight: 800;
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+}
+
+.previous-roll .history-items .item {
+    width: 40px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    transition: all .5s ease;
+    background-color: rgba(8, 12, 17, 0.5);
+}
+
+.previous-roll .history-items .item .inside {
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84%;
+    font-weight: bold;
+    height: 84%;
+    border-radius: 50%;
+    border: 3px solid #e3e6ec;
+}
+
+.roulette .pointer {
+    position: absolute;
+    z-index: 99;
+    width: 4px;
+    border-radius: 15px;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.roulette .roll .items .item {
+    width: 110px;
+    height: 180px;
+    background-color: rgba(8, 12, 17, 0.5);
+    border-radius: 10px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.roulette .roll .items {
+    width: 200px;
+    height: 100%;
+    white-space: nowrap;
+    position: relative;
+    margin: auto;
+}
+
+.roulette .roll {
+    transition: 7s cubic-bezier(.32,.64,.45,1) -27ms;
+    -webkit-transition: 7s cubic-bezier(.32,.64,.45,1) -27ms;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 800px;
+    width: 8px;
+    margin: auto;
+}
+
+.roulette .roll .tile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.roulette .roll .tile-wrapper .white svg {
+    width: 50px;
+}
+
+.roulette .roll .tile-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roulette .roll .lg-box {
+    width: 96px;
+    height: 96px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roulette .roll .black {
+    background-color: var(--black);
+}
+
+.roulette .roll .red {
+    background-color: #4a1179;
+}
+
+.roulette .roll .white {
+    background-color: var(--white);
+}
+
+.roulette .roll .number {
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roulette .roll .picker {
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    overflow: visible;
+    height: 100%;
+    transition: 7s cubic-bezier(.32,.64,.45,1) -27ms;
+    display: flex;
+}
+
+.double .button-bet{
+    display: flex;
+    flex: 1;
+}
+
+@media (min-width: 700px) and (max-width:920px){
+    .wager{
+        flex-direction: column !important;
+    }
+
+    .wager .button-bet{
+        margin-top: 20px;
+    }
+    .wager input:nth-of-type(1) {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .wager{
+        flex-direction: column !important;
+    }
+
+    .wager .button-bet{
+        margin-top: 20px;
+    }
+
+    .wager input:nth-of-type(1) {
+        margin-left: 0px;
+    }
+    .bets-history {
+        flex-direction: column;
+    }
+    .bets-history .red-history {
+        background-color: rgba(8, 12, 17, 0.5);
+        flex: 1;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    
+    .bets-history .white-history {
+        background-color: rgba(8, 12, 17, 0.5);
+        flex: 1;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    
+
+    .previous-roll {
+        flex-direction: column;
+    }
+
+    .previous-roll .history-items .item {
+        min-width: 40px;
+    }
+
+    .previous-roll .history-items {
+        overflow: hidden;
+        padding: 0;
+        margin-top: 10px;
+    }
+}

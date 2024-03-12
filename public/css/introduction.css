@@ -1,0 +1,281 @@
+.intro {
+    max-width: 1250px;
+    overflow: hidden;
+}
+
+.intro .banners-top {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro h1 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.intro .search-input {
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #323b45;
+    background: #1d2730;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 16px;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.intro .search-input input {
+    background: transparent;
+    height: 16px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.intro .banners-top img {
+    width: 100%;
+}
+
+.intro .banners-top .banner-01 {
+    border-radius: 10px;
+    width: 32%;
+    overflow: hidden;
+}
+
+.intro .banners-top .banner-02 {
+    border-radius: 10px;
+    width: 32%;
+    overflow: hidden;
+}
+
+.intro .banners-top .banner-03 {
+    border-radius: 10px;
+    width: 32%;
+    overflow: hidden;
+}
+
+
+.intro .banners-medium {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro .banners-medium img {
+    width: 100%;
+}
+
+.intro .banners-medium .gallery-cell {
+    width: 66%;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+.flickity-viewport {
+    width: 100%;
+}
+
+.intro .banners-medium .gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.intro .banners-down {
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.intro .banners-down div {
+    position: relative;
+}
+
+.intro .banners-down .originals {
+    margin-left: 11px;
+    color: gray;
+}
+
+.intro .banners-down img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.intro .banners-down .banner-01 {
+    border-radius: 10px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.intro .banners-down .banner-02 {
+    border-radius: 10px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.intro .banners-down .banner-03 {
+    border-radius: 10px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.intro .banners-down .banner-04 {
+    border-radius: 10px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.intro hr {
+    width: calc(100% - 100px); margin: auto; height: 5px; border-bottom: 2px solid rgba(100, 105, 100, 0.3); margin-top: 20px; margin-bottom: 30px;
+}
+
+.intro .cellphone {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .intro hr {
+        width: calc(100% - 10px); margin-top: 10px; margin-bottom: 20px;
+    }
+
+
+    .intro .cellphone {
+        display: flex !important;
+    }
+
+
+    .intro .search-input {
+        margin: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #323b45;
+        background: #1d2730;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 12px 16px;
+        cursor: pointer;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .intro .banners-top {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .intro .pcbanner {
+        display: none !important;
+    }
+    
+    .intro .banners-top img {
+        width: 100%;
+    }
+    
+    .intro .banners-top .banner-01 {
+        border-radius: 10px;
+        width: 33%;
+        display: none;
+        overflow: hidden;
+    }
+    
+    .intro .banners-top .banner-02 {
+        border-radius: 10px;
+        width: 49%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-top .banner-03 {
+        border-radius: 10px;
+        width: 49%;
+        overflow: hidden;
+    }
+    
+    
+    .intro .banners-medium {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .intro .banners-medium img {
+        width: 100%;
+    }
+    
+    .intro .banners-medium .banner-01 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-medium .banner-02 {
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-down {
+        padding: 10px 0px;
+        display: inline-grid;
+        grid-template-columns: repeat(2, [col-start] 1fr);
+        grid-gap: 10px;
+    }
+    
+    .intro .banners-down img {
+        width: 100%;
+    }
+    
+    .intro .banners-down .banner-01 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-down .banner-02 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-down .banner-03 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .intro .banners-down .banner-04 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .intro h1 {
+        margin-top: 10px;
+    }
+}
